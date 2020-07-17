@@ -2,12 +2,12 @@
 import java.lang.*;
 class Solution309 {
     public int maxProfit_1(int[] prices) {
-        if(prices.length==0||prices==null){
+        if(prices.length==0){
             return 0;
         }
         int n=prices.length;
         
-        int dp[][] = new int [n][n];
+        int[][] dp = new int [n][n];
         //1天内，没有操作
         for(int i=0;i<n;i++){
             dp[i][i]=0;
@@ -50,11 +50,11 @@ class Solution309 {
 	}
 	
 	public int maxProfit_2(int [] prices){
-		if(prices.length==0||prices==null){
+		if(prices.length==0){
             return 0;
         }
 		int n=prices.length;
-		int dp[][]=new int[n][3];
+		int[][] dp =new int[n][3];
 		dp[0][0]=-prices[0];
 		dp[0][1]=0;
 		dp[0][2]=0;
@@ -67,7 +67,7 @@ class Solution309 {
 	}
 
 	public int maxProfit(int [] prices){
-		if(prices.length==0||prices==null){
+		if(prices.length==0){
             return 0;
         }
 		int n=prices.length;
@@ -84,10 +84,10 @@ class Solution309 {
 		return Math.max(dp1, dp2);
 	}
 }
-public class MaxProfit {
+public class Leetcode309 {
 	public static void main(String[] args) {
 
-		int test[]= new int []{6,1,3,2,4,7};
+		int[] test = new int []{6,1,3,2,4,7};
 		
 		Solution309 tes=new Solution309();
 
@@ -106,7 +106,7 @@ public class MaxProfit {
 //		System.out.println("-------------------");
 //	}
 }
-/**
+/*
 i
 0	  0 0 2 2 3 5
 1		0 2 2 3 0
@@ -118,7 +118,7 @@ i
 j     0 1 2 3 4 5
  */
 
-/**
+/*
   * 
  * 我们目前持有一支股票，对应的「累计最大收益」记为 f[i][0]f[i][0]；
 
