@@ -12,7 +12,7 @@ import java.util.Stack;
  * 最后检查栈是否为空，为空则说明有popped描述的pop顺序
  */
 
-
+// LeetCode 946
 class SolutionJZoffer31 {
 	public boolean validateStackSequences(int[] pushed, int[] popped) {
 		Stack<Integer> sta=new Stack<>();
