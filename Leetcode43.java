@@ -27,7 +27,7 @@ class Solution43 {
 		return strb.reverse().toString();
 	}
 }
-public class JZoffer43 {
+public class Leetcode43 {
 	public static void main(String []args){
 		String str1="123",str2="456";
 		Solution43 sol = new Solution43();
