@@ -1,3 +1,5 @@
+package JZoffer;
+
 import java.util.*;
 class SolutionJZoffer40 {
 	public int[] getLeastNumbers(int[] arr, int k) {
