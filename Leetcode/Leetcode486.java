@@ -1,4 +1,5 @@
-import java.util.*;
+package Leetcode;
+
 class Solution486 {
 	int [][]dp;
 
