@@ -13,6 +13,8 @@ class binary_search_tree{
 			this.right = null;
 		}
 	}
+	// 一个节点的前驱是指在树的所有数字的升序排序中恰好在这个节点的值前面的节点
+	// 一个节点的后继是指在树的所有数字的升序排序中恰好在这个节点的值后面的节点
 
 	TreeNode tree;
 
@@ -36,6 +38,7 @@ class binary_search_tree{
 		return root;
 	}
 
+	// 由二叉搜索树的性质可知，一颗树的最大值，在他的最右叶子节点上
 	TreeNode get_max(TreeNode root){
 		if (root == null)
 			return null;
@@ -46,6 +49,7 @@ class binary_search_tree{
 		return root;
 	}
 
+	// 一个节点的前驱，或者在他的左节点的最右边，或者在他的第一个不以他为左子树的父节点上
 	TreeNode get_prior(TreeNode root){
 		if (root==null)
 			return null;
@@ -67,6 +71,7 @@ class binary_search_tree{
 		}
 	}
 
+	// 一个节点的后继或者在他的右子树的最左边，或者在他的第一个不以他为右子树的父节点上
 	TreeNode get_next(TreeNode root){
 		if (root==null)
 			return null;
@@ -88,6 +93,8 @@ class binary_search_tree{
 		}
 	}
 
+	// 前提假设是这个节点在树中不重复
+	// 则不断的根据二叉搜索树的性质向下探索直到叶子节点即可
 	void insert(TreeNode root, int key){
 		TreeNode par = null;
 		while (root !=null){
