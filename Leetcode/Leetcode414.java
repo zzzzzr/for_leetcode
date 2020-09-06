@@ -1,4 +1,5 @@
-import java.util.*;
+package Leetcode;
+
 class Solution414 {
 	public int thirdMax(int[] nums) {
 		int m1=nums[0];
