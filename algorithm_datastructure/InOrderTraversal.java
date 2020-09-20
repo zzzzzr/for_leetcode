@@ -1,9 +1,7 @@
 package algorithm_datastructure;
+import LeetcodeStructure.*;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
 
 public class InOrderTraversal {
 
