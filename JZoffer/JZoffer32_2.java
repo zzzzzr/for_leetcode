@@ -1,5 +1,6 @@
 package JZoffer;
 import java.util.*;
+import LeetcodeStructure.*;
 // 也是LeetCode102
 
 /**

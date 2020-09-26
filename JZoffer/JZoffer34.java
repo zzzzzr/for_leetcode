@@ -1,5 +1,6 @@
 package JZoffer;
 import java.util.*;
+import LeetcodeStructure.*;
 
 // 同时也是LeetCode113
 class SolutionJZoffer34 {

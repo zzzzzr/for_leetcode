@@ -1,5 +1,6 @@
 package JZoffer;
 import java.util.*;
+import LeetcodeStructure.*;
 class SolutionJZoffer32_1 {
 	public int[] levelOrder(TreeNode root) {
 		if(root==null)

@@ -1,4 +1,5 @@
 package JZoffer;
+import LeetcodeStructure.*;
 // 同时也是leetcode226
 // 大名鼎鼎的反转二叉树
 class SolutionJZoffer27 {

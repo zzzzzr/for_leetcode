@@ -1,4 +1,6 @@
 package JZoffer;
+
+import LeetcodeStructure.*;
 class SolutionJZoffer26 {
 	public boolean isSubStructure(TreeNode A, TreeNode B) {
 		if(A==null&&B==null)
