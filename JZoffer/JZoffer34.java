@@ -3,6 +3,42 @@ import java.util.*;
 import LeetcodeStructure.*;
 
 // 同时也是LeetCode113
+class Leetcode113{
+	List<List<Integer>> lis = new LinkedList<>();
+	List<Integer> templis= new LinkedList<>();
+
+
+	public List<List<Integer>> pathSum(TreeNode root, int sum) {
+		if(root==null)
+			return new LinkedList<>();
+
+		dfs(root, sum);
+
+		return lis;
+	}
+
+	public void dfs(TreeNode root,int target){
+		if(root==null)
+			return;
+		if(root.left==null&&root.right==null){
+			if(target== root.val) {
+				templis.add(root.val);
+				lis.add(new LinkedList<>(templis));
+				templis.remove(templis.size()-1);
+			}
+			return;
+		}
+		// 在列表中加入当前节点的值，意为访问过该节点
+		templis.add(root.val);
+		target-= root.val;
+
+		dfs(root.left,target);
+		dfs(root.right,target);
+
+		templis.remove(templis.size()-1);
+	}
+}
+
 class SolutionJZoffer34 {
 	List<List<Integer>> lis = new LinkedList<>();
 	List<Integer> templis= new LinkedList<>();
