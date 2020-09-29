@@ -1,8 +1,11 @@
+package Leetcode;
 
 import java.util.*;
 import LeetcodeStructure.*;
+import LeetcodeStructure.TreeNode;
+
 class Solution235 {
-	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+	public LeetcodeStructure.TreeNode lowestCommonAncestor(LeetcodeStructure.TreeNode root, LeetcodeStructure.TreeNode p, TreeNode q) {
 		if (root.val==p.val||root.val==q.val|| (p.val< root.val&&q.val>root.val))
 			return root;
 		if (p.val< root.val)
