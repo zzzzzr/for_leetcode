@@ -1,11 +1,12 @@
 package Leetcode;
 
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-	TreeNode(int x) { val = x; }
-}
+import LeetcodeStructure.*;
+//class TreeNode {
+//	int val;
+//	TreeNode left;
+//	TreeNode right;
+//	TreeNode(int x) { val = x; }
+//}
 //  递归
 class Solution104 {
 	public int maxDepth(TreeNode root) {

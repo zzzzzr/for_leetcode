@@ -1,5 +1,6 @@
 package Leetcode;
 
+import LeetcodeStructure.*;
 class Solution110 {
 	boolean ans=true;
 	public boolean isBalanced(TreeNode root) {
