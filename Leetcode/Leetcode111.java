@@ -1,5 +1,6 @@
 package Leetcode;
 
+import LeetcodeStructure.*;
 class Solution111 {
 	public int minDepth(TreeNode root) {
 		if(root==null){

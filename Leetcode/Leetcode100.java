@@ -1,4 +1,5 @@
 package Leetcode;
+import LeetcodeStructure.*;
 
 class Solution100 {
 	// DFS

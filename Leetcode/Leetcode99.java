@@ -1,5 +1,5 @@
 package Leetcode;
-
+import LeetcodeStructure.*;
 import java.util.*;
 class Solution99 {
 	int index=0;

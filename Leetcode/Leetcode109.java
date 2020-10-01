@@ -1,6 +1,7 @@
 package Leetcode;
 
 import java.util.*;
+import LeetcodeStructure.*;
 /*
 找出链表中位数节点的方法多种多样，其中较为简单的一种是「快慢指针法」。初始时，快指针 \textit{fast}fast 和慢指针 \textit{slow}slow
 均指向链表的左端点 \textit{left}left。我们将快指针 \textit{fast}fast 向右移动两次的同时，将慢指针 \textit{slow}slow 向右移动一次，

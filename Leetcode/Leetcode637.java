@@ -1,6 +1,7 @@
 package Leetcode;
 
 import java.util.*;
+import LeetcodeStructure.*;
 
 //class TreeNode {
 //  int val;

@@ -1,4 +1,5 @@
 package Leetcode;
+import LeetcodeStructure.*;
 import java.util.*;
 class Solution95 {
 	public List<TreeNode> generateTrees(int n) {
