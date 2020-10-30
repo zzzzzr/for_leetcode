@@ -1,13 +1,13 @@
+package Leetcode;
 
-import java.util.*;
-import LeetcodeStructure.*;
+import LeetcodeStructure.Node;
 
 class Solution116 {
 
 	// 方法2 巧妙的利用了已经连接好的父节点，这些父节点的 next 指针已经指向了正确的位置
 	// 那么他们的next指针的左节点即为当前父节点的右节点的next所指
 	// 而当前父节点的左节点指向的则是当前父节点的右节点，这是显然的
-	public Node connect2(Node root) {
+	public LeetcodeStructure.Node connect2(LeetcodeStructure.Node root) {
 		if (root==null)
 			return null;
 
@@ -20,11 +20,11 @@ class Solution116 {
 		return root;
 	}
 
-	public Node connect(Node root) {
+	public LeetcodeStructure.Node connect(LeetcodeStructure.Node root) {
 		if (root == null)
 			return null;
-		Node leftchild = root.left;
-		Node rightchild = root.right;
+		LeetcodeStructure.Node leftchild = root.left;
+		LeetcodeStructure.Node rightchild = root.right;
 		while (leftchild != null && rightchild != null) {
 			leftchild.next = rightchild;
 
@@ -64,19 +64,19 @@ class Solution116 {
 public class Leetcode116 {
 	public static void main(String []args){
 
-		Node node7 = new Node(7);
+		LeetcodeStructure.Node node7 = new LeetcodeStructure.Node(7);
 
-		Node node6 = new Node(6);
+		LeetcodeStructure.Node node6 = new LeetcodeStructure.Node(6);
 
-		Node node5 = new Node(5);
+		LeetcodeStructure.Node node5 = new LeetcodeStructure.Node(5);
 
-		Node node4 = new Node(4);
+		LeetcodeStructure.Node node4 = new LeetcodeStructure.Node(4);
 
-		Node node3 = new Node(3,node6,node7,null);
+		LeetcodeStructure.Node node3 = new LeetcodeStructure.Node(3,node6,node7,null);
 
-		Node node2 = new Node(2,node4,node5,null);
+		LeetcodeStructure.Node node2 = new LeetcodeStructure.Node(2,node4,node5,null);
 
-		Node node1 = new Node(1,node2,node3,null);
+		LeetcodeStructure.Node node1 = new LeetcodeStructure.Node(1,node2,node3,null);
 
 		Solution116 sol = new Solution116();
 		sol.connect2(node1);

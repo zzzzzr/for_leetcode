@@ -1,6 +1,8 @@
+package Leetcode;
 
 import java.util.*;
-import LeetcodeStructure.*;
+
+import LeetcodeStructure.Node;
 /*
 在每一层开始时先给出第一个节点，然后再在数目内继续给出其他节点，依次相连
 
@@ -21,10 +23,10 @@ class Solution117 {
 	执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户
 	内存消耗：38.7 MB, 在所有 Java 提交中击败了22.90%的用户
 	*/
-	Node temp ;
-	Node start ;
+	LeetcodeStructure.Node temp ;
+	LeetcodeStructure.Node start ;
 
-	public Node connect3(Node root) {
+	public LeetcodeStructure.Node connect3(LeetcodeStructure.Node root) {
 
 		temp = root;
 
@@ -45,7 +47,7 @@ class Solution117 {
 	}
 
 	// 在当前一层已经连接好以后，依次查找每一个节点，查看他是否有子节点，返回第一个非空子节点
-	public void findnextlevel(Node root){
+	public void findnextlevel(LeetcodeStructure.Node root){
 		while(root!=null){
 			if (root.left!=null) {
 				start= root.left;
@@ -64,7 +66,7 @@ class Solution117 {
 		start=null;
 	}
 
-	public void findnextside(Node root,Node lastnode){
+	public void findnextside(LeetcodeStructure.Node root, LeetcodeStructure.Node lastnode){
 		if (root!=null)
 			System.out.print(root.val+" ");
 		else System.out.print("null ");
@@ -98,17 +100,17 @@ class Solution117 {
 
 	/*------------------------------------------------------------------*/
 
-	public Node connect(Node root) {
+	public LeetcodeStructure.Node connect(LeetcodeStructure.Node root) {
 		if (root==null)
 			return null;
-		Queue<Node> que = new LinkedList<>();
+		Queue<LeetcodeStructure.Node> que = new LinkedList<>();
 		que.offer(root);
 		int oldnum,newnum=1;
 		while(!que.isEmpty()){
 			oldnum = newnum;
 			newnum = 0;
 
-			Node lastnode = que.poll();
+			LeetcodeStructure.Node lastnode = que.poll();
 			if (lastnode.left!=null) {
 				que.offer(lastnode.left);
 				newnum++;
@@ -119,7 +121,7 @@ class Solution117 {
 			}
 
 			for (int i=0;i<oldnum-1;i++){
-				Node temp = que.poll();
+				LeetcodeStructure.Node temp = que.poll();
 				if (temp.left!=null) {
 					que.offer(temp.left);
 					newnum++;
@@ -164,17 +166,17 @@ class Solution117 {
 public class Leetcode117 {
 	public static void main(String []args){
 
-		Node node10 = new Node(8);
-		Node node9 = new Node(6);
-		Node node8 = new Node(1);
-		Node node7 = new Node(5);
-		Node node6 = new Node(-1,null,node10,null);
-		Node node5 = new Node(3,null,node9,null);
-		Node node4 = new Node(1,node7,node8,null);
+		LeetcodeStructure.Node node10 = new LeetcodeStructure.Node(8);
+		LeetcodeStructure.Node node9 = new LeetcodeStructure.Node(6);
+		LeetcodeStructure.Node node8 = new LeetcodeStructure.Node(1);
+		LeetcodeStructure.Node node7 = new LeetcodeStructure.Node(5);
+		LeetcodeStructure.Node node6 = new LeetcodeStructure.Node(-1,null,node10,null);
+		LeetcodeStructure.Node node5 = new LeetcodeStructure.Node(3,null,node9,null);
+		LeetcodeStructure.Node node4 = new LeetcodeStructure.Node(1,node7,node8,null);
 //		Node node3 = new Node(3,node6,node7,null);
-		Node node3 = new Node(4,node5,node6,null);
-		Node node2 = new Node(2,node4,null,null);
-		Node node1 = new Node(1,node2,node3,null);
+		LeetcodeStructure.Node node3 = new LeetcodeStructure.Node(4,node5,node6,null);
+		LeetcodeStructure.Node node2 = new LeetcodeStructure.Node(2,node4,null,null);
+		LeetcodeStructure.Node node1 = new LeetcodeStructure.Node(1,node2,node3,null);
 
 		Solution117 sol = new Solution117();
 		sol.connect3(node1);
