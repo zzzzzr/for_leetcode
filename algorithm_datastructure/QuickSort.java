@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class QuickSort {
 	// start 数组开始的下标，最初为0
 	// end 数组结束的下标，最初为n-1
-	// 找到数组中第k大的数组，平均时间复杂度为O(n)，最差时间复杂度为O(n^2)
+	// 找到数组中第k大的数字，平均时间复杂度为O(n)，最差时间复杂度为O(n^2)
 	public int quicksort(int[]nums,int k,int start,int end){
 		int pivot=nums[start],low=start,high=end;
 		while(low<high){
