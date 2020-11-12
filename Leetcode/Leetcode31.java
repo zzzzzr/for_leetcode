@@ -1,3 +1,4 @@
+package Leetcode;
 
 import java.util.*;
 // https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-suan-fa-xiang-jie-si-lu-tui-dao-/
