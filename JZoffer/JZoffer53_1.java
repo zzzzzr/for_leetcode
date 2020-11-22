@@ -27,7 +27,7 @@ class SolutionJZoffer53 {
 			return search(nums, target, start, mid)+search(nums, target, mid, end);
 	}
 }
-public class JZoffer53 {
+public class JZoffer53_1 {
 	public static void main(String []args){
 		int []nums = {0,0,1,1,1,2,2,3,3,3,4,4,4,4,5,5,6,6,6,8,10,10};
 		// [0,0,1,1,1,2,2,3,3,3,4,4,4,4,5,5,6,6,6,8,10,10]
