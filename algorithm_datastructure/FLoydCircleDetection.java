@@ -10,7 +10,7 @@ public class FLoydCircleDetection {
 	public ListNode findLoopBegin(ListNode head){
 		slow = head;
 		fast = head;
-		while (slow.next!=null && fast.next.next!=null){
+		while (fast.next!=null && fast.next.next!=null){
 			slow = slow.next;
 			fast = fast.next.next;
 			if (slow == fast){
