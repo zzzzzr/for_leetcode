@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.*;
 class Solution70 {
 	public int climbStairs1(int n) {

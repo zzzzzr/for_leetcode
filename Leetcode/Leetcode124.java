@@ -1,4 +1,5 @@
-import java.util.*;
+package Leetcode;
+
 import LeetcodeStructure.*;
 class Solution124 {
 	int max=Integer.MIN_VALUE;

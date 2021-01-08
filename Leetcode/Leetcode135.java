@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.*;
 class Solution135 {
 	public int candy4(int[] ratings) {

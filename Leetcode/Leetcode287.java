@@ -1,3 +1,4 @@
+package Leetcode;
 
 import java.util.*;
 class Solution287 {

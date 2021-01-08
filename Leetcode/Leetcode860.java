@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.*;
 class Solution860 {
 	public boolean lemonadeChange(int[] bills) {
