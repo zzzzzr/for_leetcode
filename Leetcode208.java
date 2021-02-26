@@ -63,7 +63,7 @@ class Trie {
 		return true;
 	}
 }
-public class Trie1 {
+class Trie1 {
 	private boolean is_string=false;
 	private Trie1 next[]=new Trie1[26];
 
