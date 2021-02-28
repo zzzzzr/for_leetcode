@@ -1,10 +1,11 @@
-import java.util.*;
+package Leetcode;
+
 class TrieNode{
 //	public char ch;
 	public boolean isOver;
 	public TrieNode []child = new TrieNode[26];
 
-//	public TrieNode(char c){
+//	public Leetcode.TrieNode(char c){
 //		ch = c;
 //	}
 }
