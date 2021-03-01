@@ -1,4 +1,5 @@
-import java.util.*;
+package Leetcode;
+
 class Solution394 {
 	public String decodeString(String s) {
 		StringBuilder sb = new StringBuilder();

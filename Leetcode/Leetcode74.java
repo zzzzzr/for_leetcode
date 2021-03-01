@@ -1,4 +1,5 @@
-import java.util.*;
+package Leetcode;
+
 class Solution74 {
 	public boolean searchMatrix1(int[][] matrix, int target) {
 		int m = matrix.length;
